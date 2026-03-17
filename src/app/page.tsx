@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import MenuSection from './components/MenuSection';
 import ScrollAnimations from './components/ScrollAnimations';
+import SocialSection from '../components/SocialSection';
 
 const igPhotos = ['ig_01', 'ig_02', 'ig_03', 'ig_07', 'ig_08', 'ig_09', 'ig_10', 'ig_11', 'ig_12', 'ig_14', 'ig_15', 'ig_17', 'ig_18', 'ig_19', 'ig_20'];
 
@@ -292,6 +293,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SocialSection />
 
       {/* Footer */}
       <footer>

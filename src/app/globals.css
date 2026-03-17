@@ -219,6 +219,19 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;align-items:
 .del-btn-outline{background:transparent;color:var(--bk);border:2px solid var(--bk);font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;padding:.9rem 2rem;text-decoration:none;display:inline-flex;align-items:center;gap:.6rem;transition:background .2s,color .2s}
 .del-btn-outline:hover{background:var(--bk);color:var(--y)}
 
+/* Social section */
+.social-section{background:var(--b3);padding:5rem 5vw;border-top:1px solid #1d1d1d;border-bottom:1px solid #1d1d1d}
+.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#1d1d1d;margin-top:3rem}
+.social-card{background:var(--b3);padding:3rem 2rem;text-align:center;text-decoration:none;transition:background .3s;display:flex;flex-direction:column;align-items:center}
+.social-card:hover{background:var(--bk)}
+.social-icon-wrap{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;transition:transform .3s,box-shadow .3s}
+.social-card:hover .social-icon-wrap{transform:scale(1.12);box-shadow:0 0 30px rgba(255,214,0,.25)}
+.social-name{font-size:1.4rem;letter-spacing:.06em;color:var(--wh);display:block;margin-bottom:.4rem;transition:color .2s}
+.social-card:hover .social-name{color:var(--y)}
+.social-handle{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g2);display:block;margin-bottom:1.2rem}
+.social-follow{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--y);border:1px solid var(--y);padding:.45rem 1.2rem;display:inline-block;transition:background .2s,color .2s}
+.social-card:hover .social-follow{background:var(--y);color:var(--bk)}
+
 /* Footer */
 footer{background:var(--bk);border-top:1px solid #1a1a1a}
 .ft-top{background:var(--y);padding:3rem 5vw;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
@@ -246,6 +259,7 @@ footer{background:var(--bk);border-top:1px solid #1a1a1a}
 @media(max-width:1100px){
   .press-grid{grid-template-columns:1fr 1fr}
   .community-grid{grid-template-columns:1fr 1fr}
+  .social-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:900px){
   .hamburger{display:flex}
