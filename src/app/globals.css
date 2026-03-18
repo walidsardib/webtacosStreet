@@ -43,7 +43,7 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:400;display:flex;align-items:
 .mm-links{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;padding:3rem 2rem;min-height:calc(100vh - 98px)}
 .mm-links a{font-size:2.2rem;letter-spacing:.1em;text-transform:uppercase;color:var(--wh);text-decoration:none;transition:color .2s}
 .mm-links a:hover{color:var(--y)}
-.mm-links .mm-order{background:var(--y);color:var(--bk);padding:.8rem 2.5rem;font-size:1.2rem;text-align:center;width:100%;max-width:280px}
+.mm-links .mm-order{background:var(--y);color:var(--bk);padding:.8rem 2rem;font-size:1rem;text-align:center;width:280px;white-space:nowrap}
 /* Hero */
 .hero{min-height:100vh;padding-top:98px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;background:var(--bk)}
 .hero-bg-img{position:absolute;inset:0;z-index:0}
