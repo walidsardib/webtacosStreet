@@ -69,6 +69,11 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;align-items:
 .brand-strip{background:var(--y);padding:2.5rem 5vw;display:flex;align-items:center;gap:3rem;overflow:hidden}
 .strip-title{font-size:clamp(2rem,5vw,4.5rem);color:var(--bk);line-height:1;white-space:nowrap}
 .strip-sub{font-size:1rem;font-weight:500;color:rgba(0,0,0,.55);max-width:380px;line-height:1.5}
+@media(max-width:600px){
+  .brand-strip{flex-direction:column;gap:1.5rem;align-items:flex-start}
+  .strip-title{white-space:normal;font-size:clamp(2rem,10vw,3.5rem)}
+  .strip-sub{max-width:100%}
+}
 
 /* About */
 .about{display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
