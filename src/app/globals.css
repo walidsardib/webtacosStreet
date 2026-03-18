@@ -10,7 +10,7 @@ body{background:var(--bk);color:var(--wh);overflow-x:hidden}
 .ticker-item{font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--bk);padding:0 2.5rem;display:flex;align-items:center;gap:1.5rem}
 
 /* Nav */
-nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 3vw;height:60px;background:rgba(10,10,10,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #1f1f1f;transition:top .25s ease}
+nav{position:fixed;top:38px;left:0;right:0;z-index:400;display:flex;align-items:center;justify-content:space-between;padding:0 3vw;height:60px;background:rgba(10,10,10,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #1f1f1f;transition:top .25s ease}
 .nav-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
 .nav-logo img{width:40px;height:40px;border-radius:50%;object-fit:cover}
 .nav-logo-text{font-size:1.5rem;letter-spacing:.06em;color:var(--wh)}
@@ -36,8 +36,7 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;align-items:
 .hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* Mobile menu overlay */
-.mobile-menu{position:fixed;inset:0;background:rgba(10,10,10,.98);z-index:199;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;opacity:0;pointer-events:none;transition:opacity .3s}
-.mobile-menu.open{opacity:1;pointer-events:all}
+.mobile-menu{position:fixed;inset:0;background:rgba(10,10,10,.98);z-index:500;.mobile-menu.open{opacity:1;pointer-events:all}
 .mobile-menu a{font-size:2.2rem;letter-spacing:.1em;text-transform:uppercase;color:var(--wh);text-decoration:none;transition:color .2s}
 .mobile-menu a:hover{color:var(--y)}
 .mobile-menu .mm-order{background:var(--y);color:var(--bk);padding:.8rem 2.5rem;font-size:1.2rem}
