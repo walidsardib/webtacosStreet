@@ -101,8 +101,10 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;align-items:
 /* Menu */
 .menu-section{background:var(--b2);padding:6rem 5vw}
 .menu-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;flex-wrap:wrap;gap:1.5rem}
-.menu-tabs{display:flex;flex-wrap:wrap}
-.tab-btn{font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.7rem 1.3rem;background:transparent;color:var(--gr);border:1px solid #222;border-right:none;cursor:pointer;transition:all .2s}
+@media(max-width:600px){
+  .menu-tabs{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+  .tab-btn{white-space:nowrap;flex-shrink:0}
+}.tab-btn{font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:.7rem 1.3rem;background:transparent;color:var(--gr);border:1px solid #222;border-right:none;cursor:pointer;transition:all .2s}
 .tab-btn:last-child{border-right:1px solid #222}
 .tab-btn.active,.tab-btn:hover{background:var(--y);color:var(--bk);border-color:var(--y)}
 .panel{display:none}
