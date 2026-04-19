@@ -18,7 +18,7 @@ body{background:var(--bk);color:var(--wh);overflow-x:hidden}
 .ticker-item{font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--bk);padding:0 2.5rem;display:flex;align-items:center;gap:1.5rem}
 
 /* Nav */
-nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 3vw;height:60px;background:rgba(10,10,10,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #1f1f1f;transition:top .25s ease}
+nav{position:fixed;top:38px;left:0;right:0;z-index:400;display:flex;align-items:center;justify-content:space-between;padding:0 3vw;height:60px;background:rgba(10,10,10,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid #1f1f1f;transition:top .25s ease}
 .nav-logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
 .nav-logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;transition:transform .4s}
 .nav-logo:hover img{transform:rotate(360deg)}
@@ -38,19 +38,21 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:200;display:flex;align-items:
 .order-dropdown .od-icon{font-size:1.1rem;color:var(--y);width:24px;text-align:center}
 
 /* Hamburger */
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:8px;z-index:300}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:8px;z-index:600}
 .hamburger span{display:block;width:24px;height:2px;background:var(--wh);transition:transform .3s,opacity .3s}
 .hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .hamburger.active span:nth-child(2){opacity:0}
 .hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* Mobile menu overlay */
-.mobile-menu{position:fixed;inset:0;background:rgba(10,10,10,.98);z-index:199;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;opacity:0;pointer-events:none;transition:opacity .3s}
+.mobile-menu{position:fixed;inset:0;background:#0A0A0A;z-index:500;display:flex;flex-direction:column;opacity:0;pointer-events:none;transition:opacity .3s;overflow-y:auto}
 .mobile-menu.open{opacity:1;pointer-events:all}
-.mobile-menu a{font-size:2.2rem;letter-spacing:.1em;text-transform:uppercase;color:var(--wh);text-decoration:none;transition:color .2s}
-.mobile-menu a:hover{color:var(--y)}
-.mobile-menu .mm-order{background:var(--y);color:var(--bk);padding:.8rem 2.5rem;font-size:1.2rem}
-
+.mm-header{display:flex;align-items:center;justify-content:space-between;padding:0 1.2rem;height:98px;border-bottom:1px solid #1a1a1a;flex-shrink:0}
+.mm-close{background:none;border:none;color:var(--wh);font-size:1.5rem;cursor:pointer;padding:8px;line-height:1}
+.mm-links{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;padding:3rem 2rem;min-height:calc(100vh - 98px)}
+.mm-links a{font-size:2.2rem;letter-spacing:.1em;text-transform:uppercase;color:var(--wh);text-decoration:none;transition:color .2s}
+.mm-links a:hover{color:var(--y)}
+.mm-links .mm-order{background:var(--y);color:var(--bk);padding:.8rem 2rem;font-size:1rem;text-align:center;width:280px;white-space:nowrap}
 /* Hero */
 .hero{min-height:100vh;padding-top:98px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;background:var(--bk)}
 .hero-bg-img{position:absolute;inset:0;z-index:0}
@@ -453,6 +455,11 @@ footer{background:var(--bk);border-top:1px solid #1a1a1a}
   .alg-bottom{grid-template-columns:1fr}
 }
 @media(max-width:600px){
+  .brand-strip{flex-direction:column;gap:1.5rem;align-items:flex-start}
+  .strip-title{white-space:normal;font-size:clamp(2rem,10vw,3.5rem)}
+  .strip-sub{max-width:100%}
+  .menu-tabs{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+  .tab-btn{white-space:nowrap;flex-shrink:0}
   .gallery-strip{grid-template-columns:1fr 1fr}.gallery-strip img{height:180px}
   .ig-grid{grid-template-columns:repeat(3,1fr)}
   .how-grid{grid-template-columns:1fr}
