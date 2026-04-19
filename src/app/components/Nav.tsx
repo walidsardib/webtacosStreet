@@ -38,10 +38,10 @@ export default function Nav() {
         </a>
         <ul className="nav-links">
           <li><a href="#carta">Carta</a></li>
+          <li><a href="#info">Info & Alergenos</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#comunidad">Comunidad</a></li>
           <li><a href="#historia">Historia</a></li>
-          <li><a href="#info">Info & Alergenos</a></li>
           <li><a href="#locales">Locales</a></li>
           <li className="nav-order-wrap">
             <span className="nav-order">Pedir ahora</span>
@@ -58,15 +58,25 @@ export default function Nav() {
       </nav>
 
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
-        <a href="#carta" onClick={close}>Carta</a>
-        <a href="#nosotros" onClick={close}>Nosotros</a>
-        <a href="#comunidad" onClick={close}>Comunidad</a>
-        <a href="#historia" onClick={close}>Historia</a>
-        <a href="#info" onClick={close}>Info & Alergenos</a>
-        <a href="#locales" onClick={close}>Locales</a>
-        <a href="https://www.ubereats.com/es/store/tacos-street-las-fuentes/Tky_8BkAW6qgCsPNzrHEHg" target="_blank" rel="noopener noreferrer" className="mm-order" onClick={close}>Uber Eats</a>
-        <a href="https://glovoapp.com/es/es/zaragoza/stores/tacos-street-zar" target="_blank" rel="noopener noreferrer" className="mm-order" style={{ background: 'transparent', color: 'var(--y)', border: '2px solid var(--y)' }} onClick={close}>Glovo</a>
-        <a href="tel:+34643677898" className="mm-order" style={{ background: 'transparent', color: 'var(--wh)', border: '2px solid #333' }} onClick={close}>Llamar para recoger</a>
+        <div className="mm-header">
+          <a href="#" className="nav-logo" onClick={close}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/SVG-WEB-TACOS-STREET/logo-redondo.svg" alt="Tacos Street logo" width={40} height={40} />
+            <span className="nav-logo-text">TACOS<span className="dot">&middot;</span>STREET</span>
+          </a>
+          <button className="mm-close" onClick={close} aria-label="Cerrar menú">✕</button>
+        </div>
+        <div className="mm-links">
+          <a href="#carta" onClick={close}>Carta</a>
+          <a href="#info" onClick={close}>Info & Alergenos</a>
+          <a href="#nosotros" onClick={close}>Nosotros</a>
+          <a href="#comunidad" onClick={close}>Comunidad</a>
+          <a href="#historia" onClick={close}>Historia</a>
+          <a href="#locales" onClick={close}>Locales</a>
+          <a href="https://www.ubereats.com/es/store/tacos-street-las-fuentes/Tky_8BkAW6qgCsPNzrHEHg" target="_blank" rel="noopener noreferrer" className="mm-order" onClick={close}>Uber Eats</a>
+          <a href="https://glovoapp.com/es/es/zaragoza/stores/tacos-street-zar" target="_blank" rel="noopener noreferrer" className="mm-order" style={{ background: 'transparent', color: 'var(--y)', border: '2px solid var(--y)' }} onClick={close}>Glovo</a>
+          <a href="tel:+34643677898" className="mm-order" style={{ background: 'transparent', color: 'var(--wh)', border: '2px solid #333' }} onClick={close}>Llamar para recoger</a>
+        </div>
       </div>
     </>
   );

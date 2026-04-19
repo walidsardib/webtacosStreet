@@ -49,8 +49,8 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:400;display:flex;align-items:
 .mobile-menu.open{opacity:1;pointer-events:all}
 .mm-header{display:flex;align-items:center;justify-content:space-between;padding:0 1.2rem;height:98px;border-bottom:1px solid #1a1a1a;flex-shrink:0}
 .mm-close{background:none;border:none;color:var(--wh);font-size:1.5rem;cursor:pointer;padding:8px;line-height:1}
-.mm-links{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;padding:3rem 2rem;min-height:calc(100vh - 98px)}
-.mm-links a{font-size:2.2rem;letter-spacing:.1em;text-transform:uppercase;color:var(--wh);text-decoration:none;transition:color .2s}
+.mm-links{display:flex;flex-direction:column;align-items:center;gap:2rem;padding:2.5rem 2rem 3rem;min-height:calc(100vh - 98px)}
+.mm-links a{font-size:2.2rem;letter-spacing:.1em;text-transform:uppercase;color:var(--wh);text-decoration:none;transition:color .2s;text-align:center}
 .mm-links a:hover{color:var(--y)}
 .mm-links .mm-order{background:var(--y);color:var(--bk);padding:.8rem 2rem;font-size:1rem;text-align:center;width:280px;white-space:nowrap}
 /* Hero */
