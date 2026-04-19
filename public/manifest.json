@@ -1,0 +1,31 @@
+{
+  "name": "Tacos Street Zaragoza",
+  "short_name": "Tacos Street",
+  "description": "The Original French Tacos · Zaragoza. Dos locales: Las Fuentes y El Actur.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#FFD600",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/img/SVG-WEB-TACOS-STREET/isotipo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "restaurant"],
+  "shortcuts": [
+    {
+      "name": "Ver la carta",
+      "url": "/#carta",
+      "description": "Tacos, entrantes, bebidas y postres"
+    },
+    {
+      "name": "Pedir en Uber Eats",
+      "url": "https://www.ubereats.com/es/store/tacos-street-las-fuentes/Tky_8BkAW6qgCsPNzrHEHg",
+      "description": "Pide a domicilio desde Uber Eats"
+    }
+  ]
+}

@@ -395,6 +395,9 @@ footer{background:var(--bk);border-top:1px solid #1a1a1a}
 
 /* ── Allergens ── */
 .alg-wrap{display:flex;flex-direction:column;gap:1.5rem}
+.alg-slider-wrap{position:relative}
+.alg-dots{display:none}
+@media(max-width:600px){.alg-dots{display:flex}}
 .alg-warning{background:rgba(255,214,0,.05);border-left:3px solid var(--y);padding:1.2rem 1.5rem;font-size:.85rem;color:var(--gr);line-height:1.7}
 .alg-warning strong{color:var(--wh)}
 
@@ -455,9 +458,10 @@ footer{background:var(--bk);border-top:1px solid #1a1a1a}
   .alg-bottom{grid-template-columns:1fr}
 }
 @media(max-width:600px){
-  .brand-strip{flex-direction:column;gap:1.5rem;align-items:flex-start}
-  .strip-title{white-space:normal;font-size:clamp(2rem,10vw,3.5rem)}
-  .strip-sub{max-width:100%}
+  .brand-strip{flex-direction:row;flex-wrap:wrap;gap:0;align-items:center;padding:2rem 5vw}
+  .strip-icon{order:2;height:80px;margin-left:auto}
+  .strip-title{order:1;flex:1;white-space:normal;font-size:clamp(2rem,10vw,3.5rem)}
+  .strip-sub{order:3;width:100%;max-width:100%;margin-top:1rem;font-size:.9rem}
   .menu-tabs{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:4px}
   .tab-btn{white-space:nowrap;flex-shrink:0}
   .gallery-strip{grid-template-columns:1fr 1fr}.gallery-strip img{height:180px}
@@ -470,7 +474,9 @@ footer{background:var(--bk);border-top:1px solid #1a1a1a}
   .slide-card{flex:0 0 240px}
   .slide-body{padding:1.1rem 1.2rem}
   .slide-name{font-size:1.1rem}
-  .alg-grid{grid-template-columns:1fr}
+  .alg-grid{display:flex;flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:12px;padding-bottom:14px;grid-template-columns:unset}
+  .alg-grid::-webkit-scrollbar{display:none}
+  .alg-card{flex:0 0 78vw;scroll-snap-align:start}
 }
 
 /* ── Taco Builder ── */

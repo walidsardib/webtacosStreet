@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-static';
+
 const API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 const PLACE_IDS = [
   process.env.GOOGLE_PLACE_ID_LAS_FUENTES,

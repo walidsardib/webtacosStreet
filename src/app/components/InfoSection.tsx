@@ -222,6 +222,68 @@ function Slider({ items, onBoundsChange }: { items: Product[]; onBoundsChange?: 
   );
 }
 
+/* ─── Allergen Slider ─── */
+function AllergenSlider({ items }: { items: AllergenInfo[] }) {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [current, setCurrent] = useState(0);
+
+  const scrollTo = useCallback((idx: number) => {
+    const track = trackRef.current;
+    if (!track) return;
+    const card = track.children[idx] as HTMLElement;
+    if (card) track.scrollTo({ left: card.offsetLeft, behavior: 'smooth' });
+  }, []);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const cards = Array.from(track.children) as HTMLElement[];
+        let closest = 0;
+        let minDist = Infinity;
+        cards.forEach((c, i) => {
+          const dist = Math.abs(c.offsetLeft - track.scrollLeft);
+          if (dist < minDist) { minDist = dist; closest = i; }
+        });
+        setCurrent(closest);
+        ticking = false;
+      });
+    };
+    track.addEventListener('scroll', onScroll, { passive: true });
+    return () => track.removeEventListener('scroll', onScroll);
+  }, [items]);
+
+  return (
+    <div className="alg-slider-wrap">
+      <div className="alg-grid" ref={trackRef}>
+        {items.map(a => (
+          <div className="alg-card" key={a.name}>
+            <div className="alg-card-icon" style={{ background: `${a.color}15`, borderColor: `${a.color}40` }}>
+              <span>{a.icon}</span>
+            </div>
+            <div className="alg-card-name" style={{ color: a.color }}>{a.name}</div>
+            <p className="alg-card-products">{a.products}</p>
+          </div>
+        ))}
+      </div>
+      <div className="slider-dots alg-dots">
+        {items.map((_, i) => (
+          <button
+            key={i}
+            className={`slider-dot${current === i ? ' active' : ''}`}
+            onClick={() => { setCurrent(i); scrollTo(i); }}
+            aria-label={`Ir a ${i + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 /* ─── Main ─── */
 export default function InfoSection() {
   const [tab, setTab] = useState<'glosario' | 'alergenos'>('glosario');
@@ -284,17 +346,7 @@ export default function InfoSection() {
             <strong>⚠️ Importante:</strong> Todos los productos se preparan en la misma cocina. Puede haber trazas cruzadas. Si tienes alergia, <strong>consulta con el personal</strong> antes de pedir.
           </div>
 
-          <div className="alg-grid">
-            {allergens.map(a => (
-              <div className="alg-card" key={a.name}>
-                <div className="alg-card-icon" style={{ background: `${a.color}15`, borderColor: `${a.color}40` }}>
-                  <span>{a.icon}</span>
-                </div>
-                <div className="alg-card-name" style={{ color: a.color }}>{a.name}</div>
-                <p className="alg-card-products">{a.products}</p>
-              </div>
-            ))}
-          </div>
+          <AllergenSlider items={allergens} />
 
           <div className="alg-bottom">
             <div className="alg-bottom-card halal">
