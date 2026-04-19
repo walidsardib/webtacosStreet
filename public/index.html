@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tacos Street — Proximamente</title>
+  <meta name="description" content="Tacos Street — The Original French Tacos. Zaragoza. Proximamente nuestra nueva web. Made for Game-Changers.">
+  <link rel="icon" href="/img/web/logo.png">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--y:#FFD600;--yh:#FFE833;--bk:#0A0A0A;--wh:#FFFFFF;--gr:#888}
+
+    body{
+      background:var(--bk);
+      color:var(--wh);
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+    /* ── Grain overlay ── */
+    body::before{
+      content:'';
+      position:fixed;
+      inset:0;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events:none;
+      z-index:1;
+    }
+
+    /* ── Animated glow behind title ── */
+    .glow{
+      position:absolute;
+      width:600px;height:600px;
+      border-radius:50%;
+      background:radial-gradient(circle,rgba(255,214,0,.08) 0%,transparent 70%);
+      top:50%;left:50%;
+      transform:translate(-50%,-50%);
+      animation:pulse 4s ease-in-out infinite;
+      pointer-events:none;
+    }
+    @keyframes pulse{
+      0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.6}
+      50%{transform:translate(-50%,-50%) scale(1.3);opacity:1}
+    }
+
+    /* ── Container ── */
+    .container{
+      position:relative;
+      z-index:2;
+      text-align:center;
+      padding:2rem;
+      max-width:700px;
+      width:100%;
+    }
+
+    /* ── Logo ── */
+    /* ── Eyebrow ── */
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.6rem;
+      margin-bottom:1.5rem;
+      animation:fadeUp .8s ease .15s both;
+    }
+    .eyebrow-line{width:32px;height:1.5px;background:var(--y)}
+    .eyebrow-text{
+      font-size:.7rem;font-weight:700;
+      letter-spacing:.25em;text-transform:uppercase;
+      color:var(--y);
+    }
+
+    /* ── Title ── */
+    .title{
+      font-size:clamp(4rem,12vw,10rem);
+      line-height:.88;
+      letter-spacing:-.02em;
+      margin-bottom:.5rem;
+      animation:fadeUp .8s ease .3s both;
+    }
+    .title .y{color:var(--y)}
+    .title .out{
+      -webkit-text-stroke:2px var(--wh);
+      color:transparent;
+    }
+
+    /* ── Subtitle ── */
+    .subtitle{
+      font-size:clamp(.9rem,2.5vw,1.15rem);
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:var(--gr);
+      margin-bottom:3.5rem;
+      animation:fadeUp .8s ease .45s both;
+    }
+
+    /* ── "Proximamente" badge ── */
+    .badge-wrap{
+      animation:fadeUp .8s ease .6s both;
+      margin-bottom:3rem;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.8rem;
+      background:#111;
+      border:1px solid #222;
+      padding:.9rem 2rem;
+      font-size:.78rem;
+      font-weight:700;
+      letter-spacing:.2em;
+      text-transform:uppercase;
+      color:var(--wh);
+    }
+    .badge-dot{
+      width:8px;height:8px;
+      border-radius:50%;
+      background:var(--y);
+      animation:blink 1.4s ease-in-out infinite;
+    }
+    @keyframes blink{
+      0%,100%{opacity:1}
+      50%{opacity:.25}
+    }
+
+    /* ── Tagline strip ── */
+    .tagline{
+      font-size:clamp(1.3rem,4vw,2.5rem);
+      color:var(--wh);
+      margin-bottom:1rem;
+      animation:fadeUp .8s ease .75s both;
+      line-height:1.1;
+    }
+    .tagline .outline{
+      -webkit-text-stroke:1.2px var(--wh);
+      color:transparent;
+    }
+
+    .tagline-sub{
+      font-size:.88rem;
+      color:var(--gr);
+      line-height:1.7;
+      max-width:480px;
+      margin:0 auto 3rem;
+      animation:fadeUp .8s ease .85s both;
+    }
+
+    /* ── Social links ── */
+    .socials{
+      display:flex;
+      justify-content:center;
+      gap:.6rem;
+      animation:fadeUp .8s ease 1s both;
+      margin-bottom:2.5rem;
+    }
+    .si{
+      font-size:.72rem;font-weight:700;
+      letter-spacing:.12em;text-transform:uppercase;
+      color:var(--gr);text-decoration:none;
+      padding:.65rem 1.3rem;
+      border:1px solid #222;
+      transition:all .25s ease;
+    }
+    .si:hover{
+      color:var(--bk);
+      background:var(--y);
+      border-color:var(--y);
+      transform:translateY(-2px);
+    }
+
+    /* ── Delivery buttons ── */
+    .delivery{
+      display:flex;
+      justify-content:center;
+      gap:.8rem;
+      flex-wrap:wrap;
+      animation:fadeUp .8s ease 1.1s both;
+      margin-bottom:3rem;
+    }
+    .del-btn{
+      background:var(--y);
+      color:var(--bk);
+      font-size:.78rem;font-weight:800;
+      letter-spacing:.1em;text-transform:uppercase;
+      text-decoration:none;
+      padding:.85rem 2rem;
+      transition:transform .15s,background .15s;
+    }
+    .del-btn:hover{background:var(--yh);transform:translateY(-2px)}
+    .del-btn-outline{
+      background:transparent;
+      color:var(--wh);
+      font-size:.78rem;font-weight:600;
+      letter-spacing:.1em;text-transform:uppercase;
+      text-decoration:none;
+      padding:.85rem 2rem;
+      border:1.5px solid #333;
+      transition:border-color .2s,color .2s,transform .15s;
+    }
+    .del-btn-outline:hover{border-color:var(--y);color:var(--y);transform:translateY(-2px)}
+
+    /* ── Locations ── */
+    .locations{
+      display:flex;
+      justify-content:center;
+      gap:2.5rem;
+      flex-wrap:wrap;
+      animation:fadeUp .8s ease 1.2s both;
+      margin-bottom:2rem;
+    }
+    .loc{text-align:center}
+    .loc-label{
+      font-size:.6rem;font-weight:700;
+      letter-spacing:.2em;text-transform:uppercase;
+      color:var(--y);
+      margin-bottom:.3rem;
+    }
+    .loc-addr{
+      font-size:.78rem;
+      color:var(--gr);
+      line-height:1.5;
+    }
+
+    /* ── Footer ── */
+    .footer{
+      position:absolute;
+      bottom:0;left:0;right:0;
+      text-align:center;
+      padding:1.5rem;
+      font-size:.62rem;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+      color:#333;
+      z-index:2;
+      animation:fadeUp .8s ease 1.4s both;
+    }
+
+    /* ── Ticker at top ── */
+    .ticker-wrap{
+      position:fixed;top:0;left:0;right:0;
+      background:var(--y);
+      overflow:hidden;
+      height:36px;
+      display:flex;
+      align-items:center;
+      z-index:100;
+    }
+    .ticker-track{
+      display:flex;
+      animation:ticker 18s linear infinite;
+      white-space:nowrap;
+      width:max-content;
+    }
+    @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .ticker-item{
+      font-size:.72rem;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+      color:var(--bk);
+      font-weight:700;
+      padding:0 2rem;
+    }
+
+    /* ── Floating particles ── */
+    .particle{
+      position:fixed;
+      width:2px;height:2px;
+      background:var(--y);
+      border-radius:50%;
+      opacity:0;
+      pointer-events:none;
+      z-index:0;
+    }
+    .particle:nth-child(1){left:10%;animation:float 6s 0s ease-in-out infinite}
+    .particle:nth-child(2){left:25%;animation:float 8s .5s ease-in-out infinite}
+    .particle:nth-child(3){left:40%;animation:float 7s 1s ease-in-out infinite}
+    .particle:nth-child(4){left:55%;animation:float 9s 1.5s ease-in-out infinite}
+    .particle:nth-child(5){left:70%;animation:float 6.5s 2s ease-in-out infinite}
+    .particle:nth-child(6){left:85%;animation:float 7.5s .8s ease-in-out infinite}
+    @keyframes float{
+      0%{bottom:-5%;opacity:0;transform:translateX(0)}
+      20%{opacity:.4}
+      50%{opacity:.15;transform:translateX(20px)}
+      80%{opacity:.3}
+      100%{bottom:105%;opacity:0;transform:translateX(-10px)}
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    /* ── Responsive ── */
+    @media(max-width:600px){
+      .title{font-size:clamp(3.5rem,16vw,6rem)}
+      .locations{gap:1.5rem}
+      .socials{gap:.4rem}
+      .si{padding:.55rem 1rem;font-size:.65rem}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <div class="ticker-item">The Original French Tacos &bull; Zaragoza &bull; Las Fuentes &middot; El Actur &bull; Abierto todos los dias 13:00-23:00 &bull; Made for Game-Changers &bull; #TacoJomudo &bull; Pide a domicilio en Uber Eats y Glovo &bull;</div>
+      <div class="ticker-item">The Original French Tacos &bull; Zaragoza &bull; Las Fuentes &middot; El Actur &bull; Abierto todos los dias 13:00-23:00 &bull; Made for Game-Changers &bull; #TacoJomudo &bull; Pide a domicilio en Uber Eats y Glovo &bull;</div>
+    </div>
+  </div>
+
+  <!-- Floating particles -->
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+
+  <!-- Glow -->
+  <div class="glow"></div>
+
+  <!-- Main content -->
+  <div class="container">
+    <div class="eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">The Original French Tacos &middot; Zaragoza</span>
+      <div class="eyebrow-line"></div>
+    </div>
+
+    <h1 class="title">
+      <span class="y">TACOS</span><br>
+      <span class="out">STREET</span>
+    </h1>
+
+    <p class="subtitle">The Original French Tacos</p>
+
+    <div class="badge-wrap">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Nueva web en construccion
+      </div>
+    </div>
+
+    <p class="tagline">Made for <span class="outline">Game-Changers</span></p>
+    <p class="tagline-sub">Estamos preparando algo grande. Mientras tanto, puedes seguirnos en redes o pedir tu taco a domicilio.</p>
+
+    <!-- Social -->
+    <div class="socials">
+      <a href="https://www.instagram.com/tacosstreet.es/" target="_blank" rel="noopener noreferrer" class="si">Instagram</a>
+      <a href="https://www.tiktok.com/@tacosstreet.es" target="_blank" rel="noopener noreferrer" class="si">TikTok</a>
+    </div>
+
+    <!-- Delivery -->
+    <div class="delivery">
+      <a href="https://www.ubereats.com/es/store/tacos-street-las-fuentes/Tky_8BkAW6qgCsPNzrHEHg" target="_blank" rel="noopener noreferrer" class="del-btn">Pedir en Uber Eats &rarr;</a>
+      <a href="https://glovoapp.com/es/es/zaragoza/stores/tacos-street-zar" target="_blank" rel="noopener noreferrer" class="del-btn-outline">Pedir en Glovo &rarr;</a>
+    </div>
+
+    <!-- Locations -->
+    <div class="locations">
+      <div class="loc">
+        <div class="loc-label">Local 01 &middot; Las Fuentes</div>
+        <div class="loc-addr">C/ Minas, 19 &middot; 13:00 &ndash; 23:00</div>
+      </div>
+      <div class="loc">
+        <div class="loc-label">Local 02 &middot; El Actur</div>
+        <div class="loc-addr">C/ Gabriel Celaya, 14 &middot; 13:00 &ndash; 23:00</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">&copy; 2026 Tacos Street Zaragoza &bull; Made for Game-Changers</div>
+
+</body>
+</html>

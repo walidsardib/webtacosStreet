@@ -1,7 +1,7 @@
 "use client";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { SiUbereats } from "react-icons/si";
-import { MdDeliveryDining } from "react-icons/md";
+import { SiGlovo } from "react-icons/si";
 
 const socials = [
   {
@@ -30,11 +30,11 @@ const socials = [
   },
   {
     href: "https://glovoapp.com/es/es/zaragoza/stores/tacos-street-zar",
-    icon: MdDeliveryDining,
+    icon: SiGlovo,
     name: "Glovo",
     handle: "Tacos Street Zaragoza",
     cta: "Pedir",
-    gradient: "linear-gradient(135deg, #FFC244, #FFD600)",
+    gradient: "linear-gradient(135deg, #00a082, #00c99d)",
   },
 ];
 

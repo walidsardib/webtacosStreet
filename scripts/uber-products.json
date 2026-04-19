@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Taco XL",
+    "description": "3 carnes y  2 tortillas",
+    "price": "13.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/582c663c811c54e5306183061571f2ff/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Taco L",
+    "description": "2 carnes y 1 tortilla",
+    "price": "9.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/faa2089e9e80e10076c4876f294b7be3/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Taco M",
+    "description": "1 carne y 1 tortilla.",
+    "price": "8.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/51672924fbed0ca0a4d126a05379cc7b/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Street Masala",
+    "description": "Pollo Tikka, Extra de Pepinillos y Extra de Pimientos y Salsa Curry.",
+    "price": "11.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/263e8411d29c58c7d6beaa2cc3a3bc99/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Django",
+    "description": "Carne picada, Extra de Pepinillos, Extra de Cebolla Caramelizada, Cheddar Gratinado, Topping de Cebolla Crispy, Salsa Barbacoa y Salsa Tasty.",
+    "price": "12.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/4b0629f0409cfbdd44313f0f8664c11d/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Do Favela",
+    "description": "Pollo marinado, Extra de Piña, Gratinado de Queso de Cabra, Topping de Miel, Salsa Brasil y Curry-Mango",
+    "price": "11.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/b42d0a16147a8b2767073d7292aa3996/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Yamal",
+    "description": "Merguez, Extra de Huevo frito, Extra de Aceitunas, Extra de La Vaca Que Ríe, Salsa Algerienne y Andalouse",
+    "price": "11.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/00665ebab9b1f13713277f93f52fe2b9/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "El OG",
+    "description": "Tenders, Carne Picada, Gratinado de Mozarella, Topping de Bacon de Pavo, Salsa Algerienne y Biggy",
+    "price": "12.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c9ea8ef1b095d07a235a655de99ce8f2/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Supreme Cheese",
+    "description": "Cordon Bleu, Extra de bacon, Extra de Cheddar, Gratinado de Mozarella y Salsa de Queso.",
+    "price": "12.99 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/ba4b758d0be045dadd58e6701de214e8/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Patatas Fritas con Salsa de Queso",
+    "description": "Ración de patatas fritas cubiertas con salsa de queso.",
+    "price": "3.20 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/9721adbf85d646608b4758de54551761/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Patatas Fritas",
+    "description": "Ración de patatas fritas cubiertas con salsa de queso.",
+    "price": "2.00 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/aebc36398d1a80068bd11d0d7f7b9c04/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Sticks Mozzarella",
+    "description": "Palitos de mozzarella rebozados, crujientes por fuera y queso fundido por dentro.",
+    "price": "4.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/fde6144acc5afd17b9cae112212bff44/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Nuggets",
+    "description": "Nuggets de pollo empanados y crujientes.",
+    "price": "4.90 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/df70bdc68732e9d9dd9b4a097b6235dd/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Tenders",
+    "description": "Tiras de pollo rebozadas y crujientes.",
+    "price": "6.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/148a0fcc08d035eec40766e9b6fafec1/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Patatas Fritas con Salsa de queso y Bacon",
+    "description": "Patatas con salsa de queso casera y bacon de pavo",
+    "price": "3.80 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/56e490ed4cfbe39508ebfed19e6d87c5/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Ben & Jerry's Strawberry Cheesecake",
+    "description": "Helado de Ben & Jerry's",
+    "price": "4.90 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/8acd4190fb2999f7fcce933003b137ea/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Ben & Jerry's Vanilla Pecan Brittle",
+    "description": "Helado de Ben & Jerry's",
+    "price": "4.90 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/b22e1f375df83f75e4c77b56ce326d43/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Ben & Jerry's Chocolate Brownie",
+    "description": "Helado de Ben & Jerry's",
+    "price": "4.90 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/46b61acdad606f5b369eaf8a83152d69/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Ben & Jerry's Cookie Dough",
+    "description": "Helado de Ben & Jerry's",
+    "price": "4.90 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/b971e9820f2d2f47906a568b75d1fa35/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Cheesecake Lotus Biscoff",
+    "description": "Cheesecake de specula's con ingredientes originales Biscoff.",
+    "price": "5.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/31f3b98938c2c06171d16a7f4a249fdb/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Tiramisú",
+    "description": "Copa de helado artesanal italiano de tiramisú",
+    "price": "5.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/3c889c1615548178221717ff1001c8e1/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Cheesecake Frutas del Bosque",
+    "description": "Copa de helado artesanal italiano de cheesecake frutas del bosque",
+    "price": "5.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/2cdd6f313074c0189722116570a37856/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Hawai",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/9b9016fa8940a53331c5134199affb7e/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Oasis Tropical",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/f12d1b8fc3052e5a4120e1343491e162/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Coca-Cola",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/f446cba19ed7b1446def2669d942ec15/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Oasis Manzana Pera",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/363aac967aed4a2e4d904bbe2624e336/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Oasis Manzana Frambuesa",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1bc06b512a9aa0e1cda86fd9fad3e5e3/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Coca-Cola Zero",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/bee5273eeb5791d8e961bdb86c1a40c2/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Fanta Naranja",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/92c1c66b76a1c2247d31c17f5c0861ce/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Fanta Limón",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5fb6382c9d82cce94cca75181bdf1fdc/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Poms",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/1c16c79c20e10fd827b39904f5b61e54/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Fanta Fruta del Dragón y Mango",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c65d251fad187a6909f67689d3a39185/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Fanta Tropical",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/86f1ce6210152f6b7b2f60cedd39d27c/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Capri-Sun",
+    "description": "",
+    "price": "2.20 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/56b9cb42e74e69e6bf0225d6af887ba6/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Agua",
+    "description": "",
+    "price": "2.00 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/6bc4e44ebc2f263d54520f7b084132c1/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  },
+  {
+    "name": "Fuze Tea Limón",
+    "description": "Refresco de té sabor limón",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/73c813b84325a18769a9399f38252ee1/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Fuze Tea Maracuyá",
+    "description": "",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/a2304c3dc909e15d6dac51b0d98e341b/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "7up Mojito-Menta",
+    "description": "7u sabor lima menta&mojito",
+    "price": "2.50 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/8f7d51a876898694c1944dc53dafa1d9/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Monster Energy",
+    "description": "Monster lata 25cl",
+    "price": "2.80 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/5ecc04ffe9a491debdb70dcb8e74ade9/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Monster MangoLoco",
+    "description": "Monster lata 25cl",
+    "price": "2.80 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/03dcb6734ac574a831b439f97d8b15d7/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Monster Ultra Zero Azúcar",
+    "description": "Monster lata 25cl",
+    "price": "2.80 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/c301f0d3026e4384632db2e02fabb8eb/70aa2a4db7f990373ca9c376323e3dea.jpeg"
+  },
+  {
+    "name": "Salsa de Queso",
+    "description": "Salsa de queso cremosa y suave.",
+    "price": "0.90 €",
+    "imageUrl": "https://tb-static.uber.com/prod/image-proc/processed_images/fd01bbc90ff21df4c0fb8fbb71c3729a/bc9c318a9c96996e2d990faf2b0c65f6.jpeg"
+  }
+]

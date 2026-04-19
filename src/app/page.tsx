@@ -1,7 +1,11 @@
 import Nav from './components/Nav';
 import MenuSection from './components/MenuSection';
 import ScrollAnimations from './components/ScrollAnimations';
+import InfoSection from './components/InfoSection';
+import TacoBuilder from './components/TacoBuilder';
 import SocialSection from '../components/SocialSection';
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
+import { SiUbereats, SiGlovo } from 'react-icons/si';
 
 const igPhotos = ['ig_01', 'ig_02', 'ig_03', 'ig_07', 'ig_08', 'ig_09', 'ig_10', 'ig_11', 'ig_12', 'ig_14', 'ig_15', 'ig_17', 'ig_18', 'ig_19', 'ig_20'];
 
@@ -51,12 +55,17 @@ export default function Home() {
 
       {/* Brand strip */}
       <div className="brand-strip">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/img/SVG-WEB-TACOS-STREET/recurso-game-changer.svg" alt="Game Changer" className="strip-icon" />
         <div className="strip-title">MADE FOR<br />GAME-CHANGERS</div>
         <p className="strip-sub">No es un taco mexicano. Es el taco frances autentico de los barrios de Lyon. La receta original. Las salsas de Francia. Aqui, en Zaragoza. #TacoJomudo</p>
       </div>
 
       {/* Menu */}
       <MenuSection />
+
+      {/* Info: Glosario & Alergenos */}
+      <InfoSection />
 
       {/* Delivery banner */}
       <section className="delivery-banner">
@@ -71,15 +80,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="how-section">
-        <p className="sec-ey">Como funciona</p>
-        <h2 className="sec-title">Crea <span style={{ WebkitTextStroke: '1.5px #fff', color: 'transparent' }}>tu taco</span></h2>
-        <div className="how-grid">
-          <div className="how-step"><div className="how-num">01</div><div className="how-title">Tu tamano</div><p className="how-desc">M, L o XXL. Mucha hambre? El XXL te puede durar para dos comidas.</p></div>
-          <div className="how-step"><div className="how-num">02</div><div className="how-title">Tu carne</div><p className="how-desc">Merguez, pollo tikka, carne picada, cordon bleu, pollo marinado... y mas.</p></div>
-          <div className="how-step"><div className="how-num">03</div><div className="how-title">Tus extras</div><p className="how-desc">Gratinados, toppings, quesos, pina, pepinillos, cebolla crispy, huevo frito...</p></div>
-          <div className="how-step"><div className="how-num">04</div><div className="how-title">Tus salsas</div><p className="how-desc">Queso casera (la firma) + barbacoa, tasty, curry, algerienne, brasil, mango...</p></div>
+      <TacoBuilder />
+
+      {/* Map overview */}
+      <section className="map-overview-section" id="mapa">
+        <div style={{ marginBottom: '3rem' }}>
+          <p className="sec-ey">Dónde estamos</p>
+          <h2 className="sec-title" style={{ marginBottom: 0 }}>Encuéntranos <span style={{ WebkitTextStroke: '1.5px #fff', color: 'transparent' }}>en Zaragoza</span></h2>
+        </div>
+        <div className="loc-overview">
+          <div className="loc-overview-head">
+            <div>
+              <p className="sec-ey" style={{ marginBottom: '.3rem' }}>Localiza nuestros restaurantes</p>
+              <div className="loc-overview-title">Tacos Street en el mapa</div>
+              <p className="loc-overview-sub">Dos locales en Zaragoza. Las Fuentes (el original) y El Actur. Pincha sobre cada marcador para ver la direccion, horarios y abrir la navegacion.</p>
+            </div>
+            <div className="loc-overview-pins">
+              <span className="loc-pin"><span className="loc-pin-dot" />Las Fuentes &middot; C/ Minas 19</span>
+              <span className="loc-pin"><span className="loc-pin-dot" />El Actur &middot; C/ Gabriel Celaya 14</span>
+            </div>
+          </div>
+          <div className="loc-overview-map">
+            <iframe
+              src="https://www.google.com/maps?q=Tacos+Street+Zaragoza&z=12&output=embed"
+              title="Mapa Tacos Street Zaragoza - ambos locales"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          </div>
         </div>
       </section>
 
@@ -199,10 +228,37 @@ export default function Home() {
           </div>
         </div>
         <div className="press-grid">
-          <div className="press-card"><div className="press-source">El Espanol Aragon</div><p className="press-quote">&ldquo;Karim, Amin y Omar: los amigos que revolucionan Zaragoza con su nuevo restaurante. Traemos la receta original de Francia.&rdquo;</p><div className="press-date">Abril 2025</div></div>
-          <div className="press-card"><div className="press-source">Hoy Aragon</div><p className="press-quote">&ldquo;Tacos Street conquisto Zaragoza con el taco frances mas grande de Espana y ahora llega al Actur.&rdquo;</p><div className="press-date">Septiembre 2025</div></div>
-          <div className="press-card"><div className="press-source">Aragon Digital</div><p className="press-quote">&ldquo;El taco frances mas grande de Espana llega al Actur: Zaragoza inaugura un templo de comida XXL.&rdquo;</p><div className="press-date">Septiembre 2025</div></div>
-          <div className="press-card"><div className="press-source">Victor Prous</div><p className="press-quote">&ldquo;Esto podria ser el proximo fenomeno gastronomico urbano de Espana. Esto puede estar en Primera Division.&rdquo;</p><div className="press-date">Noviembre 2025</div></div>
+          <a className="press-card" href="https://www.elespanol.com/aragon/vivir/20250408/karim-amin-omar-amigos-revolucionan-zaragoza-nuevo-restaurante-traemos-receta-original-francia/1003743703159_0.html" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <div className="press-logo"><img src="/img/medios/elespañolaragon.jpg" alt="El Español" /></div>
+            <div className="press-source">El Español Aragón</div>
+            <p className="press-quote">&ldquo;Karim, Amin y Omar: los amigos que revolucionan Zaragoza con su nuevo restaurante. Traemos la receta original de Francia.&rdquo;</p>
+            <div className="press-date">Abril 2025</div>
+            <div className="press-cta">Leer artículo →</div>
+          </a>
+          <a className="press-card" href="https://www.hoyaragon.es/articulo/gastrolike/tacos-street-zaragoza/20250922095954109681.html" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <div className="press-logo"><img src="/img/medios/hoyaragon.png" alt="Hoy Aragón" /></div>
+            <div className="press-source">Hoy Aragón</div>
+            <p className="press-quote">&ldquo;Tacos Street conquistó Zaragoza con el taco francés más grande de España y ahora llega al Actur.&rdquo;</p>
+            <div className="press-date">Septiembre 2025</div>
+            <div className="press-cta">Leer artículo →</div>
+          </a>
+          <a className="press-card" href="https://www.aragondigital.es/articulo/zaragoza/taco-frances-mas-grande-espana-llega-actur-zaragoza-inaugura-templo-comida-xxl/20250923170000943438.html" target="_blank" rel="noopener noreferrer">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <div className="press-logo"><img src="/img/medios/aragondigitla.jpg" alt="Aragón Digital" /></div>
+            <div className="press-source">Aragón Digital</div>
+            <p className="press-quote">&ldquo;El taco francés más grande de España llega al Actur: Zaragoza inaugura un templo de la comida XXL.&rdquo;</p>
+            <div className="press-date">Septiembre 2025</div>
+            <div className="press-cta">Leer artículo →</div>
+          </a>
+          <a className="press-card" href="https://www.tiktok.com/@victorprous/video/7569539960160734486" target="_blank" rel="noopener noreferrer">
+            <div className="press-logo"><img src="/img/medios/victorprous.webp" alt="Víctor Prous" /></div>
+            <div className="press-source">Víctor Prous</div>
+            <p className="press-quote">&ldquo;Esto podría ser el próximo fenómeno gastronómico urbano de España. Esto puede estar en Primera División.&rdquo;</p>
+            <div className="press-date">Noviembre 2025</div>
+            <div className="press-cta">Ver video →</div>
+          </a>
         </div>
       </section>
 
@@ -262,7 +318,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Locations */}
+      {/* Individual location cards */}
       <section className="locations-section" id="locales">
         <p className="sec-ey">Donde encontrarnos</p>
         <h2 className="sec-title">Dos locales<br /><span style={{ WebkitTextStroke: '1.5px #fff', color: 'transparent' }}>en Zaragoza</span></h2>
@@ -278,10 +334,23 @@ export default function Home() {
               <div><span className="li-label">Dias</span><span className="li-val">Todos los dias</span></div>
             </div>
             <div className="loc-del"><span className="dp">Uber Eats</span><span className="dp">Glovo</span><span className="dp">Recogida en local</span></div>
+            <div className="loc-map">
+              <iframe
+                src="https://www.google.com/maps?q=Tacos+Street+Calle+Minas+19+Zaragoza&output=embed"
+                title="Mapa Tacos Street Las Fuentes"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+            <div className="loc-actions">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Tacos+Street+Calle+Minas+19+Zaragoza" target="_blank" rel="noopener noreferrer" className="loc-btn">Como llegar &rarr;</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Tacos+Street+Calle+Minas+19+Zaragoza" target="_blank" rel="noopener noreferrer" className="loc-btn-outline">Ver en Google Maps</a>
+            </div>
           </div>
           <div className="loc-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="loc-img" src="/img/web/local-exterior.jpg" alt="Exterior de Tacos Street Actur" loading="lazy" />
+            <img className="loc-img" src="img/Emocionales/Emocional 2.jpg" alt="Exterior de Tacos Street Actur" loading="lazy" />
             <div className="loc-num">Local 02 &middot; El Actur</div>
             <div className="loc-name">El Actur</div>
             <p className="loc-addr">C/ Gabriel Celaya, 14 &middot; 50018 Zaragoza</p>
@@ -290,6 +359,19 @@ export default function Home() {
               <div><span className="li-label">Dias</span><span className="li-val">Todos los dias</span></div>
             </div>
             <div className="loc-del"><span className="dp">Uber Eats</span><span className="dp">Glovo</span><span className="dp">Recogida en local</span></div>
+            <div className="loc-map">
+              <iframe
+                src="https://www.google.com/maps?q=Tacos+Street+Calle+Gabriel+Celaya+14+Zaragoza&output=embed"
+                title="Mapa Tacos Street Actur"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+            <div className="loc-actions">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Tacos+Street+Calle+Gabriel+Celaya+14+Zaragoza" target="_blank" rel="noopener noreferrer" className="loc-btn">Como llegar &rarr;</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Tacos+Street+Calle+Gabriel+Celaya+14+Zaragoza" target="_blank" rel="noopener noreferrer" className="loc-btn-outline">Ver en Google Maps</a>
+            </div>
           </div>
         </div>
       </section>
@@ -306,15 +388,16 @@ export default function Home() {
           <div>
             <div className="ft-logo-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/web/logo.png" alt="Tacos Street logo" width={48} height={48} />
+              <img src="/img/SVG-WEB-TACOS-STREET/logo-redondo.svg" alt="Tacos Street logo" width={48} height={48} />
               <span className="ft-logo">TACOS<span className="dot">&middot;</span>STREET</span>
             </div>
             <span className="ft-tline">The Original French Tacos &middot; Zaragoza</span>
             <p className="ft-desc">Fundado en 2025 por Karim, Omar y Amin. La receta autentica del taco frances de Lyon, traida directamente a las calles de Zaragoza. Made for Game-Changers. #TacoJomudo</p>
             <div className="socials">
-              <a href="https://www.instagram.com/tacosstreet.es/" className="si" target="_blank" rel="noopener noreferrer">IG</a>
-              <a href="https://www.tiktok.com/@tacosstreet.es" className="si" target="_blank" rel="noopener noreferrer">TK</a>
-              <a href="https://www.ubereats.com/es/store/tacos-street-las-fuentes/Tky_8BkAW6qgCsPNzrHEHg" className="si" target="_blank" rel="noopener noreferrer">UE</a>
+              <a href="https://www.instagram.com/tacosstreet.es/" className="si" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram size={18} /></a>
+              <a href="https://www.tiktok.com/@tacosstreet.es" className="si" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><FaTiktok size={18} /></a>
+              <a href="https://www.ubereats.com/es/store/tacos-street-las-fuentes/Tky_8BkAW6qgCsPNzrHEHg" className="si" target="_blank" rel="noopener noreferrer" aria-label="Uber Eats"><SiUbereats size={18} /></a>
+              <a href="https://glovoapp.com/es/es/zaragoza/stores/tacos-street-zar" className="si" target="_blank" rel="noopener noreferrer" aria-label="Glovo"><SiGlovo size={18} /></a>
             </div>
           </div>
           <div>
@@ -327,7 +410,7 @@ export default function Home() {
           </div>
           <div>
             <div className="ft-col-t">Nosotros</div>
-            <ul className="ft-links"><li><a href="#nosotros">Historia</a></li><li><a href="#comunidad">Comunidad</a></li><li><a href="https://www.instagram.com/tacosstreet.es/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.tiktok.com/@tacosstreet.es" target="_blank" rel="noopener noreferrer">TikTok</a></li></ul>
+            <ul className="ft-links"><li><a href="#nosotros">Historia</a></li><li><a href="#comunidad">Comunidad</a></li><li><a href="#info">Info & Alergenos</a></li><li><a href="https://www.instagram.com/tacosstreet.es/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.tiktok.com/@tacosstreet.es" target="_blank" rel="noopener noreferrer">TikTok</a></li></ul>
           </div>
         </div>
         <div className="ft-bottom">

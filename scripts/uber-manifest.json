@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Taco XL",
+    "price": "13.99 €",
+    "description": "3 carnes y  2 tortillas",
+    "file": "/img/uber/taco-xl.jpeg"
+  },
+  {
+    "name": "Taco L",
+    "price": "9.99 €",
+    "description": "2 carnes y 1 tortilla",
+    "file": "/img/uber/taco-l.jpeg"
+  },
+  {
+    "name": "Taco M",
+    "price": "8.99 €",
+    "description": "1 carne y 1 tortilla.",
+    "file": "/img/uber/taco-m.jpeg"
+  },
+  {
+    "name": "Street Masala",
+    "price": "11.99 €",
+    "description": "Pollo Tikka, Extra de Pepinillos y Extra de Pimientos y Salsa Curry.",
+    "file": "/img/uber/street-masala.jpeg"
+  },
+  {
+    "name": "Django",
+    "price": "12.99 €",
+    "description": "Carne picada, Extra de Pepinillos, Extra de Cebolla Caramelizada, Cheddar Gratinado, Topping de Cebolla Crispy, Salsa Barbacoa y Salsa Tasty.",
+    "file": "/img/uber/django.jpeg"
+  },
+  {
+    "name": "Do Favela",
+    "price": "11.99 €",
+    "description": "Pollo marinado, Extra de Piña, Gratinado de Queso de Cabra, Topping de Miel, Salsa Brasil y Curry-Mango",
+    "file": "/img/uber/do-favela.jpeg"
+  },
+  {
+    "name": "Yamal",
+    "price": "11.99 €",
+    "description": "Merguez, Extra de Huevo frito, Extra de Aceitunas, Extra de La Vaca Que Ríe, Salsa Algerienne y Andalouse",
+    "file": "/img/uber/yamal.jpeg"
+  },
+  {
+    "name": "El OG",
+    "price": "12.99 €",
+    "description": "Tenders, Carne Picada, Gratinado de Mozarella, Topping de Bacon de Pavo, Salsa Algerienne y Biggy",
+    "file": "/img/uber/el-og.jpeg"
+  },
+  {
+    "name": "Supreme Cheese",
+    "price": "12.99 €",
+    "description": "Cordon Bleu, Extra de bacon, Extra de Cheddar, Gratinado de Mozarella y Salsa de Queso.",
+    "file": "/img/uber/supreme-cheese.jpeg"
+  },
+  {
+    "name": "Patatas Fritas con Salsa de Queso",
+    "price": "3.20 €",
+    "description": "Ración de patatas fritas cubiertas con salsa de queso.",
+    "file": "/img/uber/patatas-fritas-con-salsa-de-queso.jpeg"
+  },
+  {
+    "name": "Patatas Fritas",
+    "price": "2.00 €",
+    "description": "Ración de patatas fritas cubiertas con salsa de queso.",
+    "file": "/img/uber/patatas-fritas.jpeg"
+  },
+  {
+    "name": "Sticks Mozzarella",
+    "price": "4.50 €",
+    "description": "Palitos de mozzarella rebozados, crujientes por fuera y queso fundido por dentro.",
+    "file": "/img/uber/sticks-mozzarella.jpeg"
+  },
+  {
+    "name": "Nuggets",
+    "price": "4.90 €",
+    "description": "Nuggets de pollo empanados y crujientes.",
+    "file": "/img/uber/nuggets.jpeg"
+  },
+  {
+    "name": "Tenders",
+    "price": "6.50 €",
+    "description": "Tiras de pollo rebozadas y crujientes.",
+    "file": "/img/uber/tenders.jpeg"
+  },
+  {
+    "name": "Patatas Fritas con Salsa de queso y Bacon",
+    "price": "3.80 €",
+    "description": "Patatas con salsa de queso casera y bacon de pavo",
+    "file": "/img/uber/patatas-fritas-con-salsa-de-queso-y-bacon.jpeg"
+  },
+  {
+    "name": "Ben & Jerry's Strawberry Cheesecake",
+    "price": "4.90 €",
+    "description": "Helado de Ben & Jerry's",
+    "file": "/img/uber/ben-jerry-s-strawberry-cheesecake.jpeg"
+  },
+  {
+    "name": "Ben & Jerry's Vanilla Pecan Brittle",
+    "price": "4.90 €",
+    "description": "Helado de Ben & Jerry's",
+    "file": "/img/uber/ben-jerry-s-vanilla-pecan-brittle.jpeg"
+  },
+  {
+    "name": "Ben & Jerry's Chocolate Brownie",
+    "price": "4.90 €",
+    "description": "Helado de Ben & Jerry's",
+    "file": "/img/uber/ben-jerry-s-chocolate-brownie.jpeg"
+  },
+  {
+    "name": "Ben & Jerry's Cookie Dough",
+    "price": "4.90 €",
+    "description": "Helado de Ben & Jerry's",
+    "file": "/img/uber/ben-jerry-s-cookie-dough.jpeg"
+  },
+  {
+    "name": "Cheesecake Lotus Biscoff",
+    "price": "5.50 €",
+    "description": "Cheesecake de specula's con ingredientes originales Biscoff.",
+    "file": "/img/uber/cheesecake-lotus-biscoff.jpeg"
+  },
+  {
+    "name": "Tiramisú",
+    "price": "5.50 €",
+    "description": "Copa de helado artesanal italiano de tiramisú",
+    "file": "/img/uber/tiramisu.jpeg"
+  },
+  {
+    "name": "Cheesecake Frutas del Bosque",
+    "price": "5.50 €",
+    "description": "Copa de helado artesanal italiano de cheesecake frutas del bosque",
+    "file": "/img/uber/cheesecake-frutas-del-bosque.jpeg"
+  },
+  {
+    "name": "Hawai",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/hawai.jpeg"
+  },
+  {
+    "name": "Oasis Tropical",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/oasis-tropical.jpeg"
+  },
+  {
+    "name": "Coca-Cola",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/coca-cola.jpeg"
+  },
+  {
+    "name": "Oasis Manzana Pera",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/oasis-manzana-pera.jpeg"
+  },
+  {
+    "name": "Oasis Manzana Frambuesa",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/oasis-manzana-frambuesa.jpeg"
+  },
+  {
+    "name": "Coca-Cola Zero",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/coca-cola-zero.jpeg"
+  },
+  {
+    "name": "Fanta Naranja",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/fanta-naranja.jpeg"
+  },
+  {
+    "name": "Fanta Limón",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/fanta-limon.jpeg"
+  },
+  {
+    "name": "Poms",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/poms.jpeg"
+  },
+  {
+    "name": "Fanta Fruta del Dragón y Mango",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/fanta-fruta-del-dragon-y-mango.jpeg"
+  },
+  {
+    "name": "Fanta Tropical",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/fanta-tropical.jpeg"
+  },
+  {
+    "name": "Capri-Sun",
+    "price": "2.20 €",
+    "description": "",
+    "file": "/img/uber/capri-sun.jpeg"
+  },
+  {
+    "name": "Agua",
+    "price": "2.00 €",
+    "description": "",
+    "file": "/img/uber/agua.jpeg"
+  },
+  {
+    "name": "Fuze Tea Limón",
+    "price": "2.50 €",
+    "description": "Refresco de té sabor limón",
+    "file": "/img/uber/fuze-tea-limon.jpeg"
+  },
+  {
+    "name": "Fuze Tea Maracuyá",
+    "price": "2.50 €",
+    "description": "",
+    "file": "/img/uber/fuze-tea-maracuya.jpeg"
+  },
+  {
+    "name": "7up Mojito-Menta",
+    "price": "2.50 €",
+    "description": "7u sabor lima menta&mojito",
+    "file": "/img/uber/7up-mojito-menta.jpeg"
+  },
+  {
+    "name": "Monster Energy",
+    "price": "2.80 €",
+    "description": "Monster lata 25cl",
+    "file": "/img/uber/monster-energy.jpeg"
+  },
+  {
+    "name": "Monster MangoLoco",
+    "price": "2.80 €",
+    "description": "Monster lata 25cl",
+    "file": "/img/uber/monster-mangoloco.jpeg"
+  },
+  {
+    "name": "Monster Ultra Zero Azúcar",
+    "price": "2.80 €",
+    "description": "Monster lata 25cl",
+    "file": "/img/uber/monster-ultra-zero-azucar.jpeg"
+  },
+  {
+    "name": "Salsa de Queso",
+    "price": "0.90 €",
+    "description": "Salsa de queso cremosa y suave.",
+    "file": "/img/uber/salsa-de-queso.jpeg"
+  }
+]

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Tacos Street — The Original French Tacos · Zaragoza",
   description:
     "Tacos Street: el taco francés original de Lyon, en Zaragoza. Fundado por Karim, Omar y Amin. Dos locales: Las Fuentes y Actur. Salsas importadas de Francia. #TacoJomudo",
-  icons: { icon: "/img/web/logo.png" },
+  icons: { icon: "/img/SVG-WEB-TACOS-STREET/isotipo.svg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
