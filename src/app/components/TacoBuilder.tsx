@@ -25,11 +25,11 @@ const extras = [
   { id: 'cebolla-car', name: 'Cebolla Caramelizada', emoji: '🧅', price: 1 },
   { id: 'champis', name: 'Champiñones', emoji: '🍄', price: 1 },
   { id: 'jalapenos', name: 'Jalapeños', emoji: '🌶️', price: 1 },
-  { id: 'mozzarella', name: 'Mozzarella', emoji: '🤍', price: 1 },
-  { id: 'cheddar', name: 'Cheddar', emoji: '🟧', price: 1 },
-  { id: 'boursin', name: 'Boursin', emoji: '🌿', price: 1 },
-  { id: 'raclette', name: 'Raclette grat.', emoji: '🏔️', price: 1 },
-  { id: 'cabra', name: 'Queso de Cabra grat.', emoji: '🐐', price: 1 },
+  { id: 'mozzarella', name: 'Mozzarella', emoji: '🤍', price: 1, grat: true },
+  { id: 'cheddar', name: 'Cheddar', emoji: '🟧', price: 1, grat: true },
+  { id: 'boursin', name: 'Boursin', emoji: '🌿', price: 1, grat: true },
+  { id: 'raclette', name: 'Raclette', emoji: '🏔️', price: 1, grat: true },
+  { id: 'cabra', name: 'Queso de Cabra', emoji: '🐐', price: 1, grat: true },
   { id: 'huevo', name: 'Huevo Frito', emoji: '🍳', price: 1 },
   { id: 'pina', name: 'Piña', emoji: '🍍', price: 1 },
   { id: 'aceit', name: 'Aceitunas', emoji: '🫒', price: 1 },
@@ -97,7 +97,7 @@ export default function TacoBuilder() {
   if (done) return (
     <section className="tb-section" id="builder">
       <div className="tb-done">
-        <div className="tb-done-icon">🌯</div>
+        <div className="tb-done-icon"><img src="/img/SVG-WEB-TACOS-STREET/mascota-taco.svg" alt="Taco listo" /></div>
         <h3 className="tb-done-title">¡Tu taco está listo!</h3>
         <p className="tb-done-sub">Muéstraselo al equipo cuando llegues o pídelo online</p>
         <div className="tb-done-recap">
@@ -200,6 +200,7 @@ export default function TacoBuilder() {
                     <span className="tb-opt-badge">{e.price >= 1 ? `+${fmt(e.price)}` : `+${e.price.toFixed(2).replace('.', ',')}€`}</span>
                     <span className="tb-opt-emoji">{e.emoji}</span>
                     <span className="tb-opt-name">{e.name}</span>
+                    {e.grat && <span className="tb-opt-grat">Gratinado</span>}
                   </div>
                 );
               })}

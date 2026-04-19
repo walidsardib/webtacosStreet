@@ -7,7 +7,7 @@ import SocialSection from '../components/SocialSection';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
 import { SiUbereats, SiGlovo } from 'react-icons/si';
 
-const igPhotos = ['ig_01', 'ig_02', 'ig_03', 'ig_07', 'ig_08', 'ig_09', 'ig_10', 'ig_11', 'ig_12', 'ig_14', 'ig_15', 'ig_17', 'ig_18', 'ig_19', 'ig_20'];
+const igPhotos = ['ig_12', 'ig_07', 'ig_08', 'ig_09', 'ig_10', 'ig_11', 'ig_14', 'ig_15', 'ig_17', 'ig_18', 'ig_19', 'ig_20'];
 
 export default function Home() {
   return (
@@ -125,7 +125,7 @@ export default function Home() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/img/web/mural.jpg" alt="Mural street art Tacos Street" loading="lazy" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/img/web/taco-blackweekend.jpg" alt="Taco Street con packaging" loading="lazy" />
+        <img src="img/Emocionales/Emocional 12.jpg" alt="Taco Street con packaging" loading="lazy" />
       </div>
 
       {/* About */}
