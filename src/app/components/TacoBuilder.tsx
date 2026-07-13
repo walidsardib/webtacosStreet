@@ -13,7 +13,7 @@ const meats = [
   { id: 'pollo-marinado', name: 'Pollo Marinado', emoji: '🍗', desc: 'A la plancha con hierbas. Versátil.', extra: 0 },
   { id: 'carne-picada', name: 'Carne Picada', emoji: '🥩', desc: 'Ternera sazonada. Base del Django.', extra: 0 },
   { id: 'merguez', name: 'Merguez', emoji: '🌶️', desc: 'Salchicha norteafricana especiada.', extra: 0 },
-  { id: 'cordon-bleu', name: 'Cordon Bleu', emoji: '🥇', desc: 'Rellena de jamón y queso fundido.', extra: 0 },
+  { id: 'cordon-bleu', name: 'Cordon Bleu', emoji: '🥇', desc: 'Pollo y pavo rellenos de queso fundido.', extra: 0 },
   { id: 'nuggets', name: 'Nuggets', emoji: '🟡', desc: 'Crujientes y tiernos.', extra: 0 },
   { id: 'carne-kebab', name: 'Carne Kebab', emoji: '🫓', desc: 'Ternera marinada asada vertical.', extra: 0 },
   { id: 'falafel', name: 'Falafel', emoji: '🧆', desc: 'Bolitas de garbanzos y especias. Crujiente por fuera, tierno por dentro.', extra: 0 },
