@@ -13,7 +13,7 @@ export default function ScrollAnimations() {
       });
     }, { threshold: 0.08 });
 
-    document.querySelectorAll('.mc,.ev-row,.rv,.loc-card,.how-step,.comm-card,.press-card,.mundial-card,.ig-grid a').forEach(el => {
+    document.querySelectorAll('.mc,.ev-row,.rv,.loc-card,.how-step,.comm-card,.press-card,.ig-grid a').forEach(el => {
       const h = el as HTMLElement;
       h.style.opacity = '0';
       h.style.transform = 'translateY(14px)';
@@ -21,7 +21,7 @@ export default function ScrollAnimations() {
       io.observe(el);
     });
 
-    document.querySelectorAll('.community-grid,.press-grid,.ig-grid,.reviews-grid,.mundial-grid').forEach(grid => {
+    document.querySelectorAll('.community-grid,.press-grid,.ig-grid,.reviews-grid').forEach(grid => {
       Array.from(grid.children).forEach((item, i) => {
         (item as HTMLElement).style.transitionDelay = `${i * 0.06}s`;
       });

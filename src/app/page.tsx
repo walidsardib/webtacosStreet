@@ -6,7 +6,6 @@ import TacoBuilder from './components/TacoBuilder';
 import MobileCarousel from './components/MobileCarousel';
 import ContactForm from './components/ContactForm';
 import SocialSection from '../components/SocialSection';
-import MundialBunting from './components/MundialBunting';
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
 import { SiUbereats, SiGlovo } from 'react-icons/si';
 
@@ -20,7 +19,7 @@ export default function Home() {
         <div className="ticker-track">
           {[0, 1].map(i => (
             <div className="ticker-item" key={i}>
-              El Mundial llega a Tacos Street &nbsp;&bull;&nbsp; La Mundial: 4 tacos, 4 paises &nbsp;&bull;&nbsp; The Original French Tacos &nbsp;&bull;&nbsp; Made for Game-Changers &nbsp;&bull;&nbsp; Zaragoza &nbsp;&bull;&nbsp; L-J y D: 13:00-23:30 &nbsp;&bull;&nbsp; V-S: 12:30-00:30 &nbsp;&bull;&nbsp; Menu estudiante 5,90 mar-jue 13:00-16:00 &nbsp;&bull;&nbsp; Las Fuentes &middot; El Actur &nbsp;&bull;&nbsp; #TacoJonudo &nbsp;&bull;&nbsp; Pide a domicilio en Uber Eats y Glovo &nbsp;&bull;
+              The Original French Tacos &nbsp;&bull;&nbsp; Made for Game-Changers &nbsp;&bull;&nbsp; Zaragoza &nbsp;&bull;&nbsp; L-J y D: 13:00-23:30 &nbsp;&bull;&nbsp; V-S: 12:30-00:30 &nbsp;&bull;&nbsp; Menu estudiante 5,90 mar-jue 13:00-16:00 &nbsp;&bull;&nbsp; Las Fuentes &middot; El Actur &nbsp;&bull;&nbsp; #TacoJonudo &nbsp;&bull;&nbsp; Pide a domicilio en Uber Eats y Glovo &nbsp;&bull;
             </div>
           ))}
         </div>
@@ -30,7 +29,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className="hero hero-svg" id="inicio">
-        <MundialBunting />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/img/nuevas/tacos-web-banner.svg" alt="Tacos Street - The Original French Tacos Zaragoza" className="hero-banner-svg" />
         <div className="cta-row">
@@ -61,67 +59,6 @@ export default function Home() {
         <div className="strip-title">MADE FOR<br />GAME-CHANGERS</div>
         <p className="strip-sub">No es un taco mexicano. Es el taco frances autentico de los barrios de Lyon. La receta original. Las salsas de Francia. Aqui, en Zaragoza. #TacoJonudo</p>
       </div>
-
-      {/* Mundial 2026 */}
-      <section className="mundial-section" id="mundial">
-        <div className="mundial-head">
-          <div className="mundial-head-l">
-            <p className="sec-ey">Edicion limitada &middot; Mundial 2026</p>
-            <h2 className="sec-title">El Mundial llega a<br /><span className="mundial-y">Tacos Street</span></h2>
-            <p className="mundial-sub">Ven a vivir el Mundial con nosotros. Hemos sacado el <strong>Box La Mundial</strong>: 4 boxes de edicion limitada, uno por cada pais. Cada box trae su <strong>taco</strong>, sus <strong>patatas con topping</strong> y un <strong>complemento a elegir</strong>. Atrevete con los cuatro.</p>
-            <div className="mundial-cta-row">
-              <a href="#locales" className="btn-y">Ven a probarlos</a>
-              <div className="cta-delivery mundial-delivery">
-                <span className="cta-del-label">Pedir a domicilio</span>
-                <a href="https://www.ubereats.com/es/store/tacos-street-las-fuentes/Tky_8BkAW6qgCsPNzrHEHg" target="_blank" rel="noopener noreferrer" className="cta-del-icon" aria-label="Pedir en Uber Eats">
-                  <SiUbereats size={17} />
-                </a>
-                <a href="https://glovoapp.com/es/es/zaragoza/stores/tacos-street-zar" target="_blank" rel="noopener noreferrer" className="cta-del-icon" aria-label="Pedir en Glovo">
-                  <SiGlovo size={17} />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="mundial-head-r">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/mundial/box-campeon.webp" alt="La Mundial - El Box del Campeon de Tacos Street" loading="lazy" />
-          </div>
-        </div>
-        <div className="mundial-grid">
-          <div className="mundial-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/mundial/espana.webp" alt="Taco Espana - edicion Mundial Tacos Street" loading="lazy" />
-            <div className="mundial-card-body">
-              <div className="mundial-card-head"><span className="mundial-flag">🇪🇸</span><span className="mundial-country">Box Espana</span></div>
-              <p className="mundial-card-desc">Cordón Bleu, salsa brava, gratinado de mozzarella y topping de chorizo spicy. Patatas con huevos rotos y salsa trufada.</p>
-            </div>
-          </div>
-          <div className="mundial-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/mundial/mexico.webp" alt="Taco Mexico - edicion Mundial Tacos Street" loading="lazy" />
-            <div className="mundial-card-body">
-              <div className="mundial-card-head"><span className="mundial-flag">🇲🇽</span><span className="mundial-country">Box Mexico</span></div>
-              <p className="mundial-card-desc">Pollo tikka, salsa guacamole, gratinado de cheddar spicy y topping de Doritos. Patatas con salsa cheddar y jalapeños.</p>
-            </div>
-          </div>
-          <div className="mundial-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/mundial/usa.webp" alt="Taco USA - edicion Mundial Tacos Street" loading="lazy" />
-            <div className="mundial-card-body">
-              <div className="mundial-card-head"><span className="mundial-flag">🇺🇸</span><span className="mundial-country">Box USA</span></div>
-              <p className="mundial-card-desc">Salchicha Hot Dog, ketchup & mostaza, pepinillos, gratinado cheddar con cebolla crispy. Patatas con salsa ranchera y cebolla crispy.</p>
-            </div>
-          </div>
-          <div className="mundial-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/mundial/canada.webp" alt="Taco Canada - edicion Mundial Tacos Street" loading="lazy" />
-            <div className="mundial-card-body">
-              <div className="mundial-card-head"><span className="mundial-flag">🇨🇦</span><span className="mundial-country">Box Canada</span></div>
-              <p className="mundial-card-desc">Palitos de merluza, extra de gambas, extra de cheddar y salsa Fish to Fish. Patatas con salsa de queso y bacon de pavo.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Menu */}
       <MenuSection />
@@ -234,15 +171,6 @@ export default function Home() {
         <p className="sec-ey">Mas que un restaurante</p>
         <h2 className="sec-title">La comunidad</h2>
         <MobileCarousel count={7} scrollClass="community-grid">
-          <div className="comm-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/mundial/mundial-porteria.webp" alt="El Mundial llega a Tacos Street" loading="lazy" />
-            <div className="comm-overlay">
-              <span className="comm-tag comm-tag-y">Mundial 2026</span>
-              <div className="comm-title">El Mundial llega a Tacos Street</div>
-              <p className="comm-desc">Box La Mundial: 4 boxes de edicion limitada, uno por cada pais. Ven a vivir cada partido con nosotros. <a href="#mundial" className="comm-link">Ver los boxes &rarr;</a></p>
-            </div>
-          </div>
           <div className="comm-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/img/nuevas/lafusiondelacalle.webp" alt="La Fusion de la Calle Makdurum x Tacos Street" loading="lazy" />

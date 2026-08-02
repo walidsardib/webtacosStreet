@@ -37,7 +37,6 @@ export default function Nav() {
           <span className="nav-logo-text">TACOS<span className="dot">&middot;</span>STREET</span>
         </a>
         <ul className="nav-links">
-          <li><a href="#mundial">Mundial</a></li>
           <li><a href="#carta">Carta</a></li>
           <li><a href="#nosotros">Historia</a></li>
           <li><a href="#comunidad">Comunidad</a></li>
@@ -59,7 +58,6 @@ export default function Nav() {
           <button className="mm-close" onClick={close} aria-label="Cerrar menú">✕</button>
         </div>
         <div className="mm-links">
-          <a href="#mundial" onClick={close}>Mundial</a>
           <a href="#carta" onClick={close}>Carta</a>
           <a href="#nosotros" onClick={close}>Historia</a>
           <a href="#comunidad" onClick={close}>Comunidad</a>
