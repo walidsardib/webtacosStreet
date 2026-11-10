@@ -170,7 +170,7 @@ export default function Home() {
       <section className="community-section" id="comunidad">
         <p className="sec-ey">Mas que un restaurante</p>
         <h2 className="sec-title">La comunidad</h2>
-        <MobileCarousel count={7} scrollClass="community-grid">
+        <MobileCarousel count={6} scrollClass="community-grid">
           <div className="comm-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/img/nuevas/lafusiondelacalle.webp" alt="La Fusion de la Calle Makdurum x Tacos Street" loading="lazy" />
@@ -216,6 +216,15 @@ export default function Home() {
               <p className="comm-desc">La familia crece. Streetwear, tacos y actitud. De la calle pa la calle.</p>
             </div>
           </div>
+          <a className="comm-card" href="#locales">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/web/local-exterior.webp" alt="Inauguracion de un local Tacos Street" loading="lazy" />
+            <div className="comm-overlay">
+              <span className="comm-tag comm-tag-y">Proximamente</span>
+              <div className="comm-title">Nuevo local en camino</div>
+              <p className="comm-desc">Seguimos creciendo. Muy pronto abrimos un nuevo Tacos Street. Atentos a nuestras redes.</p>
+            </div>
+          </a>
         </MobileCarousel>
       </section>
 
@@ -354,6 +363,15 @@ export default function Home() {
               <a href="https://www.google.com/maps/dir/?api=1&destination=Tacos+Street+Calle+Gabriel+Celaya+14+Zaragoza" target="_blank" rel="noopener noreferrer" className="loc-btn">Como llegar &rarr;</a>
               <a href="https://www.google.com/maps/search/?api=1&query=Tacos+Street+Calle+Gabriel+Celaya+14+Zaragoza" target="_blank" rel="noopener noreferrer" className="loc-btn-outline">Ver en Google Maps</a>
             </div>
+          </div>
+          <div className="loc-card loc-card-soon">
+            <div className="loc-soon-visual" aria-hidden="true">
+              <span className="loc-soon-big">PRÓXIMAMENTE</span>
+            </div>
+            <div className="loc-num">Local 03 &middot; Nueva apertura</div>
+            <div className="loc-name">Próximamente</div>
+            <p className="loc-addr">Muy pronto más información. Síguenos en redes para enterarte el primero.</p>
+            <div className="loc-del"><span className="dp">Próximamente</span></div>
           </div>
         </div>
       </section>

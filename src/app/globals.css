@@ -213,7 +213,7 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:400;display:flex;align-items:
 /* Community & Events */
 .community-section{background:var(--bk);padding:6rem 5vw;border-bottom:1px solid #1d1d1d}
 .community-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#1a1a1a;margin-top:3rem}
-.comm-card{background:var(--bk);overflow:hidden;position:relative;cursor:pointer}
+.comm-card{display:block;text-decoration:none;background:var(--bk);overflow:hidden;position:relative;cursor:pointer}
 .comm-card img{width:100%;height:380px;object-fit:cover;filter:saturate(1) brightness(.92);transition:filter .4s,transform .5s}
 .comm-card:hover img{filter:saturate(1.15) brightness(1.05);transform:scale(1.04)}
 .comm-overlay{position:absolute;bottom:0;left:0;right:0;padding:2rem;background:linear-gradient(to top,rgba(0,0,0,.9) 0%,transparent 100%);z-index:2}
@@ -333,6 +333,9 @@ nav{position:fixed;top:38px;left:0;right:0;z-index:400;display:flex;align-items:
 .loc-map{margin-top:2rem;position:relative;width:100%;aspect-ratio:16/10;border:1px solid #1a1a1a;overflow:hidden;filter:invert(.92) hue-rotate(180deg) saturate(.7);transition:filter .3s}
 .loc-map:hover{filter:invert(.88) hue-rotate(180deg) saturate(.85)}
 .loc-map iframe{width:100%;height:100%;border:0;display:block}
+.loc-card-soon{grid-column:1/-1}
+.loc-soon-visual{display:flex;align-items:center;justify-content:center;height:220px;margin-bottom:1.5rem;border:1px dashed #2a2a2a;background:repeating-linear-gradient(45deg,#0a0a0a 0 14px,#111 14px 28px)}
+.loc-soon-big{font-family:var(--font-thunder);font-size:clamp(2.4rem,7vw,5rem);letter-spacing:.08em;color:var(--y);line-height:1;text-align:center;padding:0 1rem}
 .loc-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
 .loc-btn{background:var(--y);color:var(--bk);font-size:.8rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:.85rem 1.4rem;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:transform .2s,box-shadow .2s}
 .loc-btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(255,214,0,.25)}
