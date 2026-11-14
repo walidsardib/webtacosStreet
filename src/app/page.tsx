@@ -173,29 +173,29 @@ export default function Home() {
         <MobileCarousel count={6} scrollClass="community-grid">
           <div className="comm-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/nuevas/reto-french-taco.webp" alt="Primera competicion de French Tacos en Espana, Mercado Central de Zaragoza" loading="lazy" style={{ objectPosition: "center 15%" }} />
+            <div className="comm-overlay">
+              <span className="comm-tag comm-tag-w">Competicion</span>
+              <div className="comm-title">El Reto del French Taco</div>
+              <p className="comm-desc">Primera competicion de French Tacos de Espana. Mercado Central de Zaragoza, Fiestas del Pilar. Representamos a Zaragoza con el Parri&apos;co. Jugamos en casa.</p>
+            </div>
+          </div>
+          <div className="comm-card">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/mundial/box-campeon.webp" alt="La Mundial - El Box del Campeon de Tacos Street" loading="lazy" />
+            <div className="comm-overlay">
+              <span className="comm-tag comm-tag-y">Mundial 2026</span>
+              <div className="comm-title">La Mundial: el Box del Campeon</div>
+              <p className="comm-desc">Vivimos el Mundial a nuestra manera. 4 boxes de edicion limitada: Espana, Mexico, USA y Canada. Un taco, patatas con topping y complemento por pais.</p>
+            </div>
+          </div>
+          <div className="comm-card">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/img/nuevas/lafusiondelacalle.webp" alt="La Fusion de la Calle Makdurum x Tacos Street" loading="lazy" />
             <div className="comm-overlay">
               <span className="comm-tag comm-tag-y">Sorteo &middot; 300&euro;</span>
               <div className="comm-title">Makdurum x Tacos Street</div>
               <p className="comm-desc">300&euro; en metalico por la cara. @makdurum y @tacosstreet.es juntos. Dos sabores, una sola oportunidad de ganar.</p>
-            </div>
-          </div>
-          <div className="comm-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/web/bikelife.webp" alt="Evento bikelife con Tacos Street" loading="lazy" />
-            <div className="comm-overlay">
-              <span className="comm-tag comm-tag-y">Bikelife</span>
-              <div className="comm-title">Bikelife x Tacos Street</div>
-              <p className="comm-desc">Colaboracion con la comunidad bikelife de Espana. Encuentros en la Expo de Zaragoza con tacos y ruedas.</p>
-            </div>
-          </div>
-          <div className="comm-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/web/evento-1v1.webp" alt="Torneo 1v1 futbol Parque Bruil" loading="lazy" />
-            <div className="comm-overlay">
-              <span className="comm-tag comm-tag-w">Evento</span>
-              <div className="comm-title">Torneo 1v1 Futbol</div>
-              <p className="comm-desc">Campo Parque Bruil. 275&euro; en premios. Tacos Street x @yessin23_. La calle es nuestra cancha.</p>
             </div>
           </div>
           <div className="comm-card">
