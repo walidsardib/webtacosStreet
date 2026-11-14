@@ -49,8 +49,13 @@ export const metadata: Metadata = {
     creator: "@tacosstreetes",
   },
   icons: {
-    icon: "/img/SVG-WEB-TACOS-STREET/logo-redondo.svg",
-    apple: "/img/SVG-WEB-TACOS-STREET/logo-redondo.svg",
+    icon: [
+      { url: "/icons/icon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icons/icon-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/img/SVG-WEB-TACOS-STREET/logo-redondo.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/manifest.json",
   verification: {},
