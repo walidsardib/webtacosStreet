@@ -170,7 +170,7 @@ export default function Home() {
       <section className="community-section" id="comunidad">
         <p className="sec-ey">Mas que un restaurante</p>
         <h2 className="sec-title">La comunidad</h2>
-        <MobileCarousel count={7} scrollClass="community-grid">
+        <MobileCarousel count={6} scrollClass="community-grid">
           <div className="comm-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/img/nuevas/reto-french-taco.webp" alt="Primera competicion de French Tacos en Espana, Mercado Central de Zaragoza" loading="lazy" style={{ objectPosition: "center 15%" }} />
@@ -187,15 +187,6 @@ export default function Home() {
               <span className="comm-tag comm-tag-y">Mundial 2026</span>
               <div className="comm-title">La Mundial: el Box del Campeon</div>
               <p className="comm-desc">Vivimos el Mundial a nuestra manera. 4 boxes de edicion limitada: Espana, Mexico, USA y Canada. Un taco, patatas con topping y complemento por pais.</p>
-            </div>
-          </div>
-          <div className="comm-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/nuevas/foodtruck-unico.webp" alt="La foodtruck de Tacos Street en el Festival Unico de Zaragoza" loading="lazy" style={{ objectPosition: "center 55%" }} />
-            <div className="comm-overlay">
-              <span className="comm-tag comm-tag-y">Foodtruck</span>
-              <div className="comm-title">Festival Unico x Tacos Street</div>
-              <p className="comm-desc">La foodtruck de Tacos Street llego al Festival Unico en el Parque del Agua, con el estreno del Taco Signature Kebabish.</p>
             </div>
           </div>
           <div className="comm-card">

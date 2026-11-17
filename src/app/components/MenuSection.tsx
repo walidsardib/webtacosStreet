@@ -19,7 +19,6 @@ const menuData: Record<string, MenuItem[]> = {
     { name: 'Yamal', price: '9,90€', desc: 'Merguez, Extra de Huevo Frito, Extra de Aceitunas, Extra de La Vaca Que Rie, Salsa Algerienne y Andalouse. El homenaje al origen del taco frances.', img: '/img/uber/yamal.webp', tags: [{ text: 'Picante', cls: 'tw' }] },
     { name: 'El OG', price: '10,90€', desc: 'Tenders, Carne Picada, Gratinado de Mozzarella, Topping de Bacon de Pavo, Salsa Algerienne y Biggy. La receta original que empezo todo.', img: '/img/uber/el-og.webp', tags: [{ text: 'Original', cls: 'ty' }] },
     { name: 'Supreme Cheese', price: '10,90€', desc: 'Cordon Bleu, Extra de Bacon, Extra de Cheddar, Gratinado de Mozzarella y Salsa de Queso. El mas contundente.', img: '/img/uber/supreme-cheese.webp', tags: [{ text: 'Contundente', cls: 'tr' }] },
-    { name: 'Kebabish', price: '9,90€', desc: 'Kebab, Extra de Queso Feta y Pepinillos, Humus y Salsa Blanca. El nuevo Taco Signature.', img: '/img/uber/kebabish.webp', tags: [{ text: 'Novedad', cls: 'ty' }] },
   ],
   tacos: [
     { name: 'Crea tu taco — M', price: '6,90€', desc: '1 carne a elegir + salsa + gratinado. El tamano clasico. Tortilla tostada a la plancha con patatas fritas y queso fundido dentro.', img: '/img/uber/taco-m.webp', tags: [{ text: '1 carne', cls: 'ty' }] },
@@ -30,10 +29,6 @@ const menuData: Record<string, MenuItem[]> = {
     { name: 'Extras & Gratinados', price: '+1€', desc: 'Extras: Bacon, cebolla caramelizada, champinones, jalapenos, mozzarella, cheddar, boursin. Gratinados: Raclette, mozzarella, cheddar, queso de cabra. Toppings +0,20€: bacon de pavo, cebolla crispy.', tags: [{ text: 'Personalizable', cls: 'tw' }] },
   ],
   extras: [
-    { name: 'Dirty Cheesy Fries', price: '3,90€', desc: 'Patatas con salsa de queso y bacon.', img: '/img/uber/dirty-cheesy-fries.webp', tags: [{ text: 'Novedad', cls: 'ty' }] },
-    { name: 'Dirty Cheddar & Bacon Fries', price: '3,90€', desc: 'Patatas con cheddar, bacon y cebolla crispy.', img: '/img/uber/dirty-cheddar-fries.webp', tags: [{ text: 'Novedad', cls: 'ty' }] },
-    { name: 'Dirty Truffle Fries', price: '4,50€', desc: 'Patatas con salsa trufada y parmesano.', img: '/img/uber/dirty-truffle-fries.webp', tags: [{ text: 'Novedad', cls: 'ty' }] },
-    { name: 'Dirty Kebab Fries', price: '4,50€', desc: 'Patatas con salsa blanca, kebab y queso feta.', img: '/img/uber/dirty-kebab-fries.webp', tags: [{ text: 'Novedad', cls: 'ty' }] },
     { name: 'Patatas fritas', price: '1,50€', desc: 'Racion de patatas fritas. Con cheddar 2,50€. Con salsa de queso 3€. Con salsa de queso + bacon 3,50€. Con raclette + bacon de pavo 3,50€.', img: '/img/técnicas/patatas-removebg-preview.webp', tags: [{ text: 'Clasico', cls: 'ty' }] },
     { name: 'Patatas con Salsa de Queso', price: '3,00€', desc: 'Racion de patatas fritas con nuestra salsa de queso casera. Irresistibles.', img: '/img/técnicas/patatassalsaqued-removebg-preview.webp', tags: [{ text: 'Mas pedido', cls: 'ty' }] },
     { name: 'Patatas con Salsa de Queso y Bacon', price: '3,50€', desc: 'Patatas fritas con salsa de queso casera y bacon. El entrante mas completo de la carta.', img: '/img/uber/patatas-fritas-con-salsa-de-queso-y-bacon.webp', tags: [{ text: 'Imprescindible', cls: 'tr' }] },
