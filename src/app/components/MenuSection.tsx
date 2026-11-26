@@ -17,7 +17,6 @@ const menuData: Record<string, MenuItem[]> = {
     { name: 'Kebabish', price: '9,90€', desc: 'Kebab, Extra de Queso Feta y Pepinillos, Humus y Salsa Blanca. El nuevo Taco Signature.', img: '/img/uber/kebabish.webp', tags: [{ text: 'Novedad', cls: 't-new' }] },
     { name: 'Street Masala', price: '9,90€', desc: 'Pollo Tikka, Extra de Pepinillos, Extra de Pimientos y Salsa Curry. Sabor profundo con toque especiado.', img: '/img/uber/street-masala.webp', tags: [{ text: 'Picante', cls: 'tw' }] },
     { name: 'Do Favela', price: '9,90€', desc: 'Pollo marinado, Extra de Pina, Gratinado de Queso de Cabra, Topping de Miel, Salsa Brasil y Curry-Mango. La combinacion que nadie esperaba y todos repiten.', img: '/img/uber/do-favela.webp', tags: [{ text: 'Top ventas', cls: 'ty' }] },
-    { name: 'Yamal', price: '9,90€', desc: 'Merguez, Extra de Huevo Frito, Extra de Aceitunas, Extra de La Vaca Que Rie, Salsa Algerienne y Andalouse. El homenaje al origen del taco frances.', img: '/img/uber/yamal.webp', tags: [{ text: 'Picante', cls: 'tw' }] },
     { name: 'El OG', price: '10,90€', desc: 'Tenders, Carne Picada, Gratinado de Mozzarella, Topping de Bacon de Pavo, Salsa Algerienne y Biggy. La receta original que empezo todo.', img: '/img/uber/el-og.webp', tags: [{ text: 'Original', cls: 'ty' }] },
     { name: 'Supreme Cheese', price: '10,90€', desc: 'Cordon Bleu, Extra de Bacon, Extra de Cheddar, Gratinado de Mozzarella y Salsa de Queso. El mas contundente.', img: '/img/uber/supreme-cheese.webp', tags: [{ text: 'Contundente', cls: 'tr' }] },
   ],
