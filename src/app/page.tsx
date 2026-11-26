@@ -171,7 +171,7 @@ export default function Home() {
         <p className="sec-ey">Mas que un restaurante</p>
         <h2 className="sec-title">La comunidad</h2>
         <MobileCarousel count={6} scrollClass="community-grid">
-          <div className="comm-card">
+          <div className="comm-card comm-new">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/img/nuevas/reto-french-taco.webp" alt="Primera competicion de French Tacos en Espana, Mercado Central de Zaragoza" loading="lazy" style={{ objectPosition: "center 15%" }} />
             <div className="comm-overlay">
@@ -191,11 +191,11 @@ export default function Home() {
           </div>
           <div className="comm-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/img/nuevas/lafusiondelacalle.webp" alt="La Fusion de la Calle Makdurum x Tacos Street" loading="lazy" />
+            <img src="/img/nuevas/foodtruck-unico.webp" alt="La foodtruck de Tacos Street en el Festival Unico de Zaragoza" loading="lazy" style={{ objectPosition: "center 55%" }} />
             <div className="comm-overlay">
-              <span className="comm-tag comm-tag-y">Sorteo &middot; 300&euro;</span>
-              <div className="comm-title">Makdurum x Tacos Street</div>
-              <p className="comm-desc">300&euro; en metalico por la cara. @makdurum y @tacosstreet.es juntos. Dos sabores, una sola oportunidad de ganar.</p>
+              <span className="comm-tag comm-tag-y">Foodtruck</span>
+              <div className="comm-title">Festival Unico x Tacos Street</div>
+              <p className="comm-desc">La foodtruck de Tacos Street llego al Festival Unico en el Parque del Agua, con el estreno del Taco Signature Kebabish.</p>
             </div>
           </div>
           <div className="comm-card">

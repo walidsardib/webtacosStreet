@@ -756,3 +756,20 @@ a.ci-val:hover{color:var(--y)}
   .ci-row{grid-template-columns:1fr;gap:.2rem;padding:.8rem 1rem}
 }
 
+
+/* Novedades: se nota que son nuevas */
+.t-new{color:var(--bk);background:var(--y);border-color:var(--y);font-weight:800;overflow:hidden;animation:tagPulse 2.4s ease-in-out infinite}
+.t-new::before{content:'✦';margin-right:.35rem;display:inline-block;animation:newSpark 1.8s ease-in-out infinite}
+.t-new::after{content:'';position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:newTagShine 3s ease-in-out infinite}
+.mc-new{position:relative;border-left-color:var(--y);animation:newGlow 2.6s ease-in-out infinite}
+.mc-new::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 40%,rgba(255,214,0,.13) 50%,transparent 60%);background-size:250% 100%;animation:newSweep 3.6s ease-in-out infinite}
+.mc-new .mc-name{color:var(--y)}
+.comm-new::after{content:'';position:absolute;inset:0;border:2px solid var(--y);pointer-events:none;z-index:3;animation:newRing 2.4s ease-in-out infinite}
+.comm-new .comm-tag{background:var(--y);color:var(--bk);font-weight:800;animation:tagPulse 2.4s ease-in-out infinite}
+.comm-new .comm-tag::before{content:'✦ NUEVO · ';white-space:pre}
+@keyframes newRing{0%,100%{opacity:.35;box-shadow:inset 0 0 0 0 rgba(255,214,0,0)}50%{opacity:1;box-shadow:inset 0 0 22px 0 rgba(255,214,0,.35)}}
+@keyframes newGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,214,0,0)}50%{box-shadow:0 0 26px 2px rgba(255,214,0,.28)}}
+@keyframes newSweep{0%{background-position:150% 0}60%,100%{background-position:-50% 0}}
+@keyframes newSpark{0%,100%{transform:scale(1) rotate(0);opacity:1}50%{transform:scale(1.35) rotate(25deg);opacity:.75}}
+@keyframes newTagShine{0%{left:-60%}55%,100%{left:140%}}
+@media (prefers-reduced-motion:reduce){.t-new,.t-new::before,.t-new::after,.mc-new,.mc-new::after,.comm-new::after,.comm-new .comm-tag{animation:none}}
